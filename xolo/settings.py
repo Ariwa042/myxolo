@@ -35,7 +35,6 @@ CSRF_TRUSTED_ORIGINS = ['https://wallet-nrrw.onrender.com']
 INSTALLED_APPS = [
     'account',
     'core',
-    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -184,8 +183,3 @@ CAMPAIGN_EMAIL_BACKENDS = {
 }
 
 #JAZZMIN SETUP
-JAZZMIN_SETTINGS = {
-    "site_title": "My Admin",
-    "site_header": "My Admin",
-    "welcome_sign": "Welcome to the Admin Panel",
-}
