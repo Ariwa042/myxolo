@@ -1,5 +1,6 @@
 from django.urls import path
 from . import views
+from core.views import wallet_info
 
 app_name = 'account'
 
