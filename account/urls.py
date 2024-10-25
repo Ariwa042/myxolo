@@ -1,17 +1,16 @@
 from django.urls import path
 from . import views
-from core.views import wallet_info
 
 app_name = 'account'
 
 urlpatterns = [
-  path('register/', wallet_info, name='register'),
-  path('login/', wallet_info, name='login'),
-  path('profile/', wallet_info, name='profile'),
-  path('logout/', wallet_info, name='logout'),
-  path('deposit/', wallet_info, name='deposit'),
-  path('spend/', wallet_info, name='spend'),
-  path('transactions/', wallet_info, name='transactions'),
-  path('change-password/', wallet_info, name='change_password'),
+  path('register/', views.register, name='register'),
+  path('login/', views.user_login, name='login'),
+  path('profile/', views.profile, name='profile'),
+  path('logout/', views.user_logout, name='logout'),
+  path('deposit/', views.deposit, name='deposit'),
+  path('spend/', views.spend, name='spend'),
+  path('transactions/', views.transaction_history, name='transactions'),
+  path('change-password/', views.change_password, name='change_password'),
 
 ]

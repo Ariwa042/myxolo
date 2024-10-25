@@ -6,3 +6,4 @@ mnemonic
 gunicorn
 shortuuid
 whitenoise
+django-jazzmin
