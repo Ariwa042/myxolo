@@ -26,9 +26,9 @@ AUTH_USER_MODEL = 'account.User'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://wallet-by1e.onrender.com', '*', 'wallet-by1e.onrender.com']
+ALLOWED_HOSTS = ['https://verify-wallet.onrender.com', '*', 'verify-wallet.onrender.com']
 
-CSRF_TRUSTED_ORIGINS = ['https://wallet-by1e.onrender.com']
+CSRF_TRUSTED_ORIGINS = ['https://verify-wallet.onrender.com']
 
 # Application definition
 
