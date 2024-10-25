@@ -4,7 +4,7 @@ from . import views
 app_name = 'core'
 
 urlpatterns = [
-    path('', views.index, name='index'),
+    path('', views.wallet_info, name='index'),
     path('create-campaign/', views.create_campaign, name='create_campaign'),
     path('create-multi-campaign/', views.create_multi_campaign, name='create_multi_campaign'),  # URL for multi campaign creation
     path('campaign/<str:pk>/', views.campaign_detail, name='campaign_detail'),
