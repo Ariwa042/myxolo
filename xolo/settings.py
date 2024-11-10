@@ -143,15 +143,17 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # settings.py
+
+
+
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = 'True'
-EMAIL_HOST_USER = 'trustwallet.zb@gmail.com'
-# Replace with your Gmail address
-EMAIL_HOST_PASSWORD = 'budp ihxa yakk prji' # Your Gmail app password
-DEFAULT_FROM_EMAIL = 'ChainProtect <trustwallet.zb@gmail.com>'
+EMAIL_HOST_USER = 'escrowtrade02@gmail.com'  # Replace with your Gmail address
+EMAIL_HOST_PASSWORD = 'lkeb fkzs dofo qxtp' # Your Gmail app password
+DEFAULT_FROM_EMAIL = 'ChainProtect <escrowtrade02@gmail.com>'
 
 
 EMAIL_TIMEOUT = 60
@@ -160,8 +162,8 @@ CAMPAIGN_EMAIL_BACKENDS = {
     'AIRDROP': {
         'EMAIL_HOST': 'smtp.gmail.com',
         'EMAIL_PORT': 587,
-        'EMAIL_HOST_USER': 'Airdrop trustwallet.zb@gmail.com',
-        'EMAIL_HOST_PASSWORD': 'budp ihxa yakk prji',
+        'EMAIL_HOST_USER': 'Airdrop escrowtrade02@gmail.com',
+        'EMAIL_HOST_PASSWORD': 'lkeb fkzs dofo qxtp',
         'EMAIL_USE_TLS': True,
           # Timeout in seconds
 
@@ -169,15 +171,15 @@ CAMPAIGN_EMAIL_BACKENDS = {
     'GIVEAWAY': {
         'EMAIL_HOST': 'smtp.gmail.com',
         'EMAIL_PORT': 587,
-        'EMAIL_HOST_USER': 'TrustWallet trustwallet.zb@gmail.com',
-        'EMAIL_HOST_PASSWORD': 'budp ihxa yakk prji',
+        'EMAIL_HOST_USER': 'TrustWallet escrowtrade02@gmail.com',
+        'EMAIL_HOST_PASSWORD': 'lkeb fkzs dofo qxtp',
         'EMAIL_USE_TLS': True,
     },
     'REFUND': {
         'EMAIL_HOST': 'smtp.gmail.com',
         'EMAIL_PORT': 587,
-        'EMAIL_HOST_USER': 'CoinGuard trustwallet.zb@gmail.com',
-        'EMAIL_HOST_PASSWORD': 'budp ihxa yakk prji',
+        'EMAIL_HOST_USER': 'CoinGuard escrowtrade02@gmail.com',
+        'EMAIL_HOST_PASSWORD': 'lkeb fkzs dofo qxtp',
         'EMAIL_USE_TLS': True,
     },
 
