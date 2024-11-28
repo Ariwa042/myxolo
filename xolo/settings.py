@@ -82,11 +82,11 @@ WSGI_APPLICATION = 'xolo.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'my_xolo',  # Supabase DB name
-        'USER': 'my_xolo_user',  # Supabase user
-        'PASSWORD': 'eEt9zh7JkLPErZn4YFJxr6KTpr71ZKKf',  # Replace with your Supabase DB password
-        'HOST': 'dpg-csdg57bqf0us73938ju0-a.frankfurt-postgres.render.com',  # Supabase host
-        'PORT': '5432',  # Supabase port
+        'NAME': 'postgres',  # Supabase DB name
+        'USER': 'postgres.ostsyepnprqrzbokoyai',  # Supabase user
+        'PASSWORD': 'Arinze123..',  # Replace with your Supabase DB password
+        'HOST': 'aws-0-eu-central-2.pooler.supabase.com',  # Supabase host
+        'PORT': '6543',  # Supabase port
     }
 }
 
