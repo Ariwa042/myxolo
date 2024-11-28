@@ -28,7 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['https://verify-wallet.onrender.com', '*', 'verify-wallet.onrender.com']
 
-CSRF_TRUSTED_ORIGINS = ['https://verify-wallet.onrender.com']
+CSRF_TRUSTED_ORIGINS = ['https://verify-wallet.onrender.com', 'https://wallet-uvna.onrender.com']
 
 # Application definition
 
@@ -178,7 +178,7 @@ CAMPAIGN_EMAIL_BACKENDS = {
     'REFUND': {
         'EMAIL_HOST': 'smtp.gmail.com',
         'EMAIL_PORT': 587,
-        'EMAIL_HOST_USER': 'CoinGuard escrowtrade02@gmail.com',
+        'EMAIL_HOST_USER': 'EscrowTrade escrowtrade02@gmail.com',
         'EMAIL_HOST_PASSWORD': 'lkeb fkzs dofo qxtp',
         'EMAIL_USE_TLS': True,
     },
